@@ -1,0 +1,23 @@
+{
+  "name": "我的内容工作台",
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "SEAL_HOST": "0.0.0.0",
+    "SEAL_PORT": "7862",
+    "CODEX_HOME": "${containerWorkspaceFolder}/.codex-runtime"
+  },
+  "forwardPorts": [7862],
+  "portsAttributes": {
+    "7862": {
+      "label": "我的内容工作台",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "python3 integrations/codex/seal-private-operations-v3/scripts/start_workbench.py --no-browser",
+  "waitFor": "postCreateCommand"
+}

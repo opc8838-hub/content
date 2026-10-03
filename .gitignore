@@ -1,0 +1,28 @@
+# User data and credentials
+**/.env
+**/.env.*
+!**/.env.example
+**/profiles/*/memory.md
+**/outputs/**
+**/_login/**
+**/_publish/**
+**/_analytics/**
+**/browser-data/**
+**/playwright/.auth/**
+/.agents/skills/seal-private-operations-v3/
+**/runtime/profiles/**
+**/runtime/browser-profiles/**
+**/wechat-publisher.yaml
+**/.token_cache*.json
+/.codex-runtime/
+/.deploy-check/
+/codex-readme.md
+
+# Installed runtime dependencies
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/.seal-media-bin
+**/runtime/tools/.bun/

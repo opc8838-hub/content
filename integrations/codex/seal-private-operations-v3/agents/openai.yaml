@@ -1,0 +1,4 @@
+interface:
+  display_name: "我的内容工作台"
+  short_description: "跨 macOS 与 Windows 的 Codex 原生多平台运营工作台"
+  default_prompt: "启动我的内容工作台。"
